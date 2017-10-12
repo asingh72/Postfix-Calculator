@@ -1,0 +1,6 @@
+all:assignment3   
+
+assignment3:	
+	flex calc2.l
+	bison -dv calc2.y
+	gcc calc2.tab.c lex.yy.c -o calc2
